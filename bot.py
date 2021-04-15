@@ -45,17 +45,10 @@ def sprawdzCoJestTerazITamWejdz(czas, przedmioty):
         if czas['dzien'] == przedmioty[przedmiot]['dzien']:
             if czas['godzina'] * 60 + czas['minuta'] > przedmioty[przedmiot]['godzinastart'] * 60 + przedmioty[przedmiot]['minutastart'] and czas['godzina'] * 60 + czas['minuta'] < przedmioty[przedmiot]['godzinakoniec'] * 60 + przedmioty[przedmiot]['minutakoniec']:
                 if wolne:
-<<<<<<< HEAD
                     # Jezeli uzywasz chrome to zamien driver na:
                     # driver = webdriver.Chrome(PATH)
                     driver = webdriver.Chrome(
                         executable_path=PATH, options=(option))
-=======
-                    #Jezeli uzywasz chrome to zamien driver na:
-                    driver = webdriver.Chrome(PATH)
-                    # driver = webdriver.Chrome(
-                    #     executable_path=PATH, options=(option))
->>>>>>> e2d747916f135f3ac25541deaccd7d639179f6ef
                     print(driver)
                     driver.maximize_window()
                     zalogujDoEkursy()
