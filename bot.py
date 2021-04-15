@@ -3,8 +3,12 @@ import datetime
 import json
 import time
 import os
+import platform
 
-PATH = 'chromedriver'
+if platform.system() == 'Windows':
+    PATH = 'chromedriver.exe'
+elif platform.system() == 'Linux':
+    PATH = 'chromedriver.exe'
 PATHbrave = "/usr/bin/brave-browser"
 option = webdriver.ChromeOptions()
 option.binary_location = PATHbrave
@@ -41,10 +45,10 @@ def sprawdzCoJestTerazITamWejdz(czas, przedmioty):
         if czas['dzien'] == przedmioty[przedmiot]['dzien']:
             if czas['godzina'] * 60 + czas['minuta'] > przedmioty[przedmiot]['godzinastart'] * 60 + przedmioty[przedmiot]['minutastart'] and czas['godzina'] * 60 + czas['minuta'] < przedmioty[przedmiot]['godzinakoniec'] * 60 + przedmioty[przedmiot]['minutakoniec']:
                 if wolne:
-                    # Jezeli uzywasz chrome to zamien driver na:
-                    #driver = webdriver.Chrome(PATH)
-                    driver = webdriver.Chrome(
-                        executable_path=PATH, options=(option))
+                    #Jezeli uzywasz chrome to zamien driver na:
+                    driver = webdriver.Chrome(PATH)
+                    # driver = webdriver.Chrome(
+                    #     executable_path=PATH, options=(option))
                     print(driver)
                     driver.maximize_window()
                     zalogujDoEkursy()
@@ -156,7 +160,10 @@ def wejdzNaZajecia(przedmiot):
     if przedmiot['typ'] == "bb":
         wejdzNaBB(przedmiot)
     if przedmiot['typ'] == "zoom":
-        wejdzNaZoom(przedmiot)
+        if platform.system() == 'Linux':
+            wejdzNaZoom(przedmiot)
+        if platform.system() == 'Windows':
+            print("Niestety spotkania na zoomie nie sa obslugiwane na windowsie (nie ma mozliwosci otwarcia zooma przez terminal)")
 
 
 while True:
