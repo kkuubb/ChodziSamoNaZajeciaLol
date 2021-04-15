@@ -1,0 +1,109 @@
+{
+  "BIOW": {
+    "linkprzedmiot": "https://ekursy.put.poznan.pl/course/view.php?id=3616",
+    "dzien": 4,
+    "godzinastart": 9,
+    "minutastart": 45,
+    "godzinakoniec": 11,
+    "minutakoniec": 15,
+    "typ": "bb",
+    "frek": 0,
+    "linkzajecia": "https://ekursy.put.poznan.pl/mod/bigbluebuttonbn/view.php?id=241898"
+  },
+  "PROZW":{
+    "linkprzedmiot": "https://ekursy.put.poznan.pl/course/view.php?id=3627",
+    "dzien": 4,
+    "godzinastart": 11,
+    "minutastart": 45,
+    "godzinakoniec": 13,
+    "minutakoniec": 15,
+    "typ": "zoom",
+    "linkDoPodstrony": "//*[@id='module-242187']/div/div/div[2]/div[1]/a",
+    "Przycisk": 0,
+    "frek": 0,
+    "LinkDoZooma": "https://us02web.zoom.us/j/707253166?pwd=enM5RUdtREQ1SVZHcndKVEpTaG4vQT09"
+  },
+  "IPW":{
+    "linkprzedmiot": "https://ekursy.put.poznan.pl/course/view.php?id=3551",
+    "dzien": 1,
+    "godzinastart": 13,
+    "minutastart": 30,
+    "godzinakoniec": 15,
+    "minutakoniec": 0,
+    "typ": "zoom",
+    "linkDoPodstrony": "//*[@id='module-656552']/div/div/div[2]/div/a",
+    "Przycisk": 1,
+    "frek": 0,
+    "PrzyciskPath": "//*[@id='region-main']/div/div[1]/form/button"
+  },
+  "IPL":{
+    "linkprzedmiot": "https://ekursy.put.poznan.pl/course/view.php?id=3551",
+    "dzien": 1,
+    "godzinastart": 9,
+    "minutastart": 45,
+    "godzinakoniec": 11,
+    "minutakoniec": 15,
+    "typ": "zoom",
+    "linkDoPodstrony": "//*[@id='module-805387']/div/div/div[2]/div/a",
+    "Przycisk": 1,
+    "frek": 0,
+    "PrzyciskPath": "//*[@id='region-main']/div/div[1]/form/button"
+  },
+  "PROWW":{
+      "linkprzedmiot": "https://ekursy.put.poznan.pl/course/view.php?id=3629",
+      "dzien": 3,
+      "godzinastart": 16,
+      "minutastart": 50,
+      "godzinakoniec": 18,
+      "minutakoniec": 20,
+      "typ": "zoom",
+      "linkDoPodstrony": "//*[@id='module-883455']/div/div/div[2]/div[1]/a",
+      "Przycisk": 0,
+      "frek": 1,
+      "LinkDoZooma": "https://us02web.zoom.us/j/82374867320?pwd=Nm1rR20yeXlYUEtPc0Y5VjRRSXJPQT09"
+    },
+    "PAIL": {
+      "linkprzedmiot": "https://ekursy.put.poznan.pl/course/view.php?id=3620",
+      "dzien": 2,
+      "godzinastart": 13,
+      "minutastart": 30,
+      "godzinakoniec": 15,
+      "minutakoniec": 0,
+      "typ": "bb",
+      "frek": 0,
+      "linkzajecia": "https://ekursy.put.poznan.pl/mod/bigbluebuttonbn/view.php?id=784878"
+    },
+    "BIOL": {
+      "linkprzedmiot": "https://ekursy.put.poznan.pl/course/view.php?id=3616",
+      "dzien": 3,
+      "godzinastart": 8,
+      "minutastart": 0,
+      "godzinakoniec": 9,
+      "minutakoniec": 30,
+      "typ": "bb",
+      "frek": 0,
+      "linkzajecia": "https://ekursy.put.poznan.pl/mod/bigbluebuttonbn/view.php?id=241898"
+    },
+    "PROZL": {
+      "linkprzedmiot": "https://ekursy.put.poznan.pl/course/view.php?id=3627",
+      "dzien": 3,
+      "godzinastart": 9,
+      "minutastart": 45,
+      "godzinakoniec": 11,
+      "minutakoniec": 15,
+      "typ": "bb",
+      "frek": 0,
+      "linkzajecia": "https://ekursy.put.poznan.pl/mod/bigbluebuttonbn/view.php?id=786046"
+    },
+    "PROWL": {
+      "linkprzedmiot": "https://ekursy.put.poznan.pl/course/view.php?id=3629",
+      "dzien": 5,
+      "godzinastart": 9,
+      "minutastart": 45,
+      "godzinakoniec": 11,
+      "minutakoniec": 15,
+      "typ": "bb",
+      "frek": 1,
+      "linkzajecia": "https://ekursy.put.poznan.pl/mod/bigbluebuttonbn/view.php?id=887689"
+    }
+}
