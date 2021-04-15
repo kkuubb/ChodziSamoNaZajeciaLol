@@ -14,4 +14,4 @@ Zmienne np. 'przyciskPath' to tak zwane xPath z pliku html. Jeżeli nie wiesz ja
 
 ### Mozliwe problemy
 1. Tak jak pisalem wyżej program przystosowany do przegladarki brave - zmiana przegladarki to zmiana kawalka kodu
-2. Program byl pisany na linuxie i pod linuxa jest przystosowany - nie powinno miec to wplywu na dzialanie spotkan na BBB ale moze miec wplyw na odpalanie sie zooma. W tym poradniku chyba wszystko jest wytłumaczone jak to zrobić na windowsie- 'https://superuser.com/questions/1563255/start-a-zoom-meeting-from-the-command-line'. Trzeba zmienic kod w linijkach 112, 116, 125, 129
+2. Program byl pisany na linuxie i pod linuxa jest przystosowany - nie powinno miec to wplywu na dzialanie spotkan na BBB ale moze miec wplyw na odpalanie sie zooma. W tym poradniku chyba wszystko jest wytłumaczone jak to zrobić na windowsie- 'https://superuser.com/questions/1563255/start-a-zoom-meeting-from-the-command-line'. Trzeba zmienic kod w linijkach 112, 116, 125, 129. Trzeba również zamienic chromedriver na chromedriver.exe.
