@@ -8,7 +8,7 @@ import platform
 if platform.system() == 'Windows':
     PATH = 'chromedriver.exe'
 elif platform.system() == 'Linux':
-    PATH = 'chromedriver.exe'
+    PATH = 'chromedriver'
 PATHbrave = "/usr/bin/brave-browser"
 option = webdriver.ChromeOptions()
 option.binary_location = PATHbrave
