@@ -5,13 +5,24 @@ import time
 import os
 import platform
 
+
+#Dla uzytkownikow chroma i brave
+# if platform.system() == 'Windows':
+#     PATH = 'drivers/chromedriver.exe'
+# elif platform.system() == 'Linux':
+#     PATH = 'drivers/chromedriver'
+# PATHbrave = "/usr/bin/brave-browser"
+# option = webdriver.ChromeOptions()
+# option.binary_location = PATHbrave
+
+
+#Dla uzytkownikow Firefox
 if platform.system() == 'Windows':
-    PATH = 'chromedriver.exe'
+   PATH = 'drivers/geckodriver.exe'
 elif platform.system() == 'Linux':
-    PATH = 'chromedriver.exe'
-PATHbrave = "/usr/bin/brave-browser"
-option = webdriver.ChromeOptions()
-option.binary_location = PATHbrave
+   PATH = 'drivers/geckodriver'
+
+
 wolne = True
 
 
@@ -45,11 +56,13 @@ def sprawdzCoJestTerazITamWejdz(czas, przedmioty):
         if czas['dzien'] == przedmioty[przedmiot]['dzien']:
             if czas['godzina'] * 60 + czas['minuta'] > przedmioty[przedmiot]['godzinastart'] * 60 + przedmioty[przedmiot]['minutastart'] and czas['godzina'] * 60 + czas['minuta'] < przedmioty[przedmiot]['godzinakoniec'] * 60 + przedmioty[przedmiot]['minutakoniec']:
                 if wolne:
+                    # Jezeli uzywasz Firefox to zamien driver na:
+                    driver = webdriver.Firefox(executable_path=PATH)
                     # Jezeli uzywasz chrome to zamien driver na:
                     # driver = webdriver.Chrome(PATH)
-                    driver = webdriver.Chrome(
-                        executable_path=PATH, options=(option))
-                    print(driver)
+                    # Jezeli uzywasz Brave
+                    # driver = webdriver.Chrome(executable_path=PATH, options=(option))
+                    #print(driver)
                     driver.maximize_window()
                     zalogujDoEkursy()
                     print("Zalogowano pomyslnie")
@@ -63,7 +76,7 @@ def sprawdzCoJestTerazITamWejdz(czas, przedmioty):
         wolne = True
         print("zamykam")
         driver.quit()
-        print(driver)
+        #print(driver)
         return driver, False
     else:
         return False, False
