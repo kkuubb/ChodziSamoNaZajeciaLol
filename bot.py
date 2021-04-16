@@ -24,7 +24,7 @@ if platform.system() == 'Windows':
 elif platform.system() == 'Linux':
     PATH = 'drivers/geckodriver'
 
-plikjson = "testowy.json"
+plikjson = "L2.json"
 wolne = True
 #sprawdzajZajecia = True
 wybieramPrzedmiot = False
@@ -237,6 +237,7 @@ def odswiezMenu():
         if not(wybieramPrzedmiot):
             print("\n\nPROSTE MENU!!!!!!!!!!!!")
             print("1. Otworz strone przedmiotu")
+            print("2. Zamknij program")
             print("Co chcesz zrobic: ")
         else:
             przedmioty = pobierzDaneOPrzedmiotach()
@@ -251,12 +252,15 @@ def odswiezMenu():
 if __name__ == "__main__":
     watki = []
     watekMenu = Thread(target=odswiezMenu)
+    watekMenu.daemon = True
     watekMenu.start()
     watekZajecia = Thread(target=sprawdzanieZajec)
+    watekZajecia.daemon = True
     watekZajecia.start()
     while True:
         print("PROSTE MENU!!!!!!!!!!!!")
         print("1. Otworz strone przedmiotu")
+        print("2. Zamknij program")
         wybieramPrzedmiot = False
         x = input("Co chcesz zrobic: ")
         if x == "1":
@@ -265,3 +269,5 @@ if __name__ == "__main__":
             watki.append(Thread(target=wejdzNaStronePrzedmiotu()))
             watki[-1].start()
             # wejdzNaStronePrzedmiotu()
+        elif x == "2":
+            sys.exit()
