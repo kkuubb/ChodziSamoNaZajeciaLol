@@ -180,9 +180,9 @@ def wejdzNaZajecia(przedmiot):
 
 
 while True:
-    time.sleep(30)
     czas = sprawdzGodzine()
     przedmioty = pobierzDaneOPrzedmiotach()
     driver, coJest = sprawdzCoJestTerazITamWejdz(czas, przedmioty)
     if coJest:
         wejdzNaZajecia(coJest)
+    time.sleep(30)
