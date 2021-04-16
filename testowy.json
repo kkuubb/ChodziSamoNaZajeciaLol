@@ -1,0 +1,57 @@
+{
+  "1": {
+  "linkprzedmiot": "https://ekursy.put.poznan.pl/course/view.php?id=3629",
+  "dzien": 1,
+  "godzinastart": 0,
+  "minutastart": 0,
+  "godzinakoniec": 24,
+  "minutakoniec": 0,
+  "typ": "bb",
+  "frek": 1,
+  "linkzajecia": "https://ekursy.put.poznan.pl/mod/bigbluebuttonbn/view.php?id=887689"
+},
+"2": {
+"linkprzedmiot": "https://ekursy.put.poznan.pl/course/view.php?id=3629",
+"dzien": 2,
+"godzinastart": 0,
+"minutastart": 0,
+"godzinakoniec": 24,
+"minutakoniec": 0,
+"typ": "bb",
+"frek": 1,
+"linkzajecia": "https://ekursy.put.poznan.pl/mod/bigbluebuttonbn/view.php?id=887689"
+},
+"3": {
+"linkprzedmiot": "https://ekursy.put.poznan.pl/course/view.php?id=3629",
+"dzien": 3,
+"godzinastart": 0,
+"minutastart": 0,
+"godzinakoniec": 24,
+"minutakoniec": 0,
+"typ": "bb",
+"frek": 1,
+"linkzajecia": "https://ekursy.put.poznan.pl/mod/bigbluebuttonbn/view.php?id=887689"
+},
+"4": {
+"linkprzedmiot": "https://ekursy.put.poznan.pl/course/view.php?id=3629",
+"dzien": 4,
+"godzinastart": 0,
+"minutastart": 0,
+"godzinakoniec": 24,
+"minutakoniec": 0,
+"typ": "bb",
+"frek": 1,
+"linkzajecia": "https://ekursy.put.poznan.pl/mod/bigbluebuttonbn/view.php?id=887689"
+},
+"5": {
+"linkprzedmiot": "https://ekursy.put.poznan.pl/course/view.php?id=3629",
+"dzien": 5,
+"godzinastart": 0,
+"minutastart": 0,
+"godzinakoniec": 24,
+"minutakoniec": 0,
+"typ": "bb",
+"frek": 1,
+"linkzajecia": "https://ekursy.put.poznan.pl/mod/bigbluebuttonbn/view.php?id=887689"
+}
+}

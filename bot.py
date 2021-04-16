@@ -35,7 +35,7 @@ def odczytajDaneLogowania():
 
 
 def pobierzDaneOPrzedmiotach():
-    jsonf = open('zajecia.json')
+    jsonf = open('L2.json')
     lista = json.load(jsonf)
     return lista
 
@@ -66,8 +66,9 @@ def sprawdzCoJestTerazITamWejdz(czas, przedmioty):
                     driver.maximize_window()
                     zalogujDoEkursy()
                     print("Zalogowano pomyslnie")
-                    driver.get(przedmioty[przedmiot]['linkprzedmiot'])
+                    # driver.get(przedmioty[przedmiot]['linkprzedmiot'])
                     print("Jestem na stronie przedmiotu")
+                    driver.get(przedmioty[przedmiot]['linkprzedmiot'])
                     wolne = False
                     return driver, przedmioty[przedmiot]
                 else:
@@ -96,6 +97,9 @@ def zalogujDoEkursy():
     loginUsername.send_keys(dane[0])
     loginPassword.send_keys(dane[1])
     loginButton.click()
+    time.sleep(2)
+    if driver.current_url == "https://ekursy.put.poznan.pl/login/index.php":
+        loginWithEKonto.click()
 
 
 def wejdzNaBB(przedmiot):
