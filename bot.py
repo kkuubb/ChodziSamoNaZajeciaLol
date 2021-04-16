@@ -75,7 +75,7 @@ def sprawdzCoJestTerazITamWejdz(czas, przedmioty):
                     return driver, False
     if not(wolne):
         wolne = True
-        print("zamykam")
+        print("Zajecia sie skonczyly, zamykam przegladarke")
         driver.quit()
         # print(driver)
         return driver, False
@@ -118,6 +118,7 @@ def wejdzNaBB(przedmiot):
         driver.get(
             'https://ekursy.put.poznan.pl/mod/attendance/view.php?id=242233')
         driver.switch_to.window(driver.window_handles[1])
+    print("Jestem na zajeciach na BBB")
 
 
 def wejdzNaZoom(przedmiot):
@@ -154,7 +155,7 @@ def wejdzNaZoom(przedmiot):
         driver.switch_to.window(driver.window_handles[0])
         driver.get(
             'https://ekursy.put.poznan.pl/mod/attendance/view.php?id=242233')
-
+    print("Jestem na zajeciach na Zoom")
     # driver.get(linkDoZooma.get_attribute('href'))
 
 
@@ -175,8 +176,10 @@ def znajdzDaneZoomUname(link):
 def wejdzNaZajecia(przedmiot):
     global driver
     if przedmiot['typ'] == "bb":
+        print("Probuje wejsc na BBB")
         wejdzNaBB(przedmiot)
     if przedmiot['typ'] == "zoom":
+        print("Probuje wejsc na Zoom")
         if platform.system() == 'Linux':
             wejdzNaZoom(przedmiot)
         if platform.system() == 'Windows':
