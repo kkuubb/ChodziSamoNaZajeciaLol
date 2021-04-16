@@ -6,7 +6,7 @@ import os
 import platform
 
 
-#Dla uzytkownikow chroma i brave
+# Dla uzytkownikow chroma i brave
 # if platform.system() == 'Windows':
 #     PATH = 'drivers/chromedriver.exe'
 # elif platform.system() == 'Linux':
@@ -16,11 +16,11 @@ import platform
 # option.binary_location = PATHbrave
 
 
-#Dla uzytkownikow Firefox
+# Dla uzytkownikow Firefox
 if platform.system() == 'Windows':
-   PATH = 'drivers/geckodriver.exe'
+    PATH = 'drivers/geckodriver.exe'
 elif platform.system() == 'Linux':
-   PATH = 'drivers/geckodriver'
+    PATH = 'drivers/geckodriver'
 
 
 wolne = True
@@ -62,7 +62,7 @@ def sprawdzCoJestTerazITamWejdz(czas, przedmioty):
                     # driver = webdriver.Chrome(PATH)
                     # Jezeli uzywasz Brave
                     # driver = webdriver.Chrome(executable_path=PATH, options=(option))
-                    #print(driver)
+                    # print(driver)
                     driver.maximize_window()
                     zalogujDoEkursy()
                     print("Zalogowano pomyslnie")
@@ -76,7 +76,7 @@ def sprawdzCoJestTerazITamWejdz(czas, przedmioty):
         wolne = True
         print("zamykam")
         driver.quit()
-        #print(driver)
+        # print(driver)
         return driver, False
     else:
         return False, False
@@ -180,7 +180,7 @@ def wejdzNaZajecia(przedmiot):
 
 
 while True:
-    time.sleep(1)
+    time.sleep(30)
     czas = sprawdzGodzine()
     przedmioty = pobierzDaneOPrzedmiotach()
     driver, coJest = sprawdzCoJestTerazITamWejdz(czas, przedmioty)
