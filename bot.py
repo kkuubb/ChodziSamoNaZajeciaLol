@@ -24,9 +24,10 @@ if platform.system() == 'Windows':
 elif platform.system() == 'Linux':
     PATH = 'drivers/geckodriver'
 
-plikjson = "L2.json"
+plikjson = "testowy.json"
 wolne = True
-sprawdzajZajecia = True
+#sprawdzajZajecia = True
+wybieramPrzedmiot = False
 
 
 def odczytajDaneLogowania():
@@ -230,25 +231,37 @@ def wejdzNaStronePrzedmiotu():
 
 
 def odswiezMenu():
+    global wybieramPrzedmiot
     while True:
         time.sleep(120)
-        print("\n\nPROSTE MENU!!!!!!!!!!!!")
-        print("1. Otworz strone przedmiotu")
-        print("Co chcesz zrobic: ")
+        if not(wybieramPrzedmiot):
+            print("\n\nPROSTE MENU!!!!!!!!!!!!")
+            print("1. Otworz strone przedmiotu")
+            print("Co chcesz zrobic: ")
+        else:
+            przedmioty = pobierzDaneOPrzedmiotach()
+            k = 1
+            print("\n\n")
+            for i in przedmioty:
+                print(str(k) + ". ", i)
+                k += 1
+            print("Podaj numerek przedmiotu: ")
 
 
 if __name__ == "__main__":
     watki = []
+    watekMenu = Thread(target=odswiezMenu)
+    watekMenu.start()
+    watekZajecia = Thread(target=sprawdzanieZajec)
+    watekZajecia.start()
     while True:
-        watekMenu = Thread(target=odswiezMenu)
-        watekMenu.start()
-        watekZajecia = Thread(target=sprawdzanieZajec)
-        watekZajecia.start()
         print("PROSTE MENU!!!!!!!!!!!!")
         print("1. Otworz strone przedmiotu")
+        wybieramPrzedmiot = False
         x = input("Co chcesz zrobic: ")
         if x == "1":
+            wybieramPrzedmiot = True
+            x = 0
             watki.append(Thread(target=wejdzNaStronePrzedmiotu()))
             watki[-1].start()
-            x = 0
             # wejdzNaStronePrzedmiotu()
