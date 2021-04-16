@@ -4,6 +4,7 @@ import json
 import time
 import os
 import platform
+from threading import Thread
 
 
 # Dla uzytkownikow chroma i brave
@@ -22,8 +23,9 @@ if platform.system() == 'Windows':
 elif platform.system() == 'Linux':
     PATH = 'drivers/geckodriver'
 
-plikjson = "L2.json"
+plikjson = "testowy.json"
 wolne = True
+sprawdzajZajecia = True
 
 
 def odczytajDaneLogowania():
@@ -186,10 +188,30 @@ def wejdzNaZajecia(przedmiot):
             print("Niestety spotkania na zoomie nie sa obslugiwane na windowsie (nie ma mozliwosci otwarcia zooma przez terminal)")
 
 
-while True:
-    czas = sprawdzGodzine()
-    przedmioty = pobierzDaneOPrzedmiotach()
-    driver, coJest = sprawdzCoJestTerazITamWejdz(czas, przedmioty)
-    if coJest:
-        wejdzNaZajecia(coJest)
-    time.sleep(30)
+def sprawdzanieZajec():
+    while True:
+        czas = sprawdzGodzine()
+        przedmioty = pobierzDaneOPrzedmiotach()
+        driver, coJest = sprawdzCoJestTerazITamWejdz(czas, przedmioty)
+        if coJest:
+            wejdzNaZajecia(coJest)
+        time.sleep(30)
+
+
+if __name__ == "__main__":
+    while True:
+        if sprawdzajZajecia:
+            watekZajecia = Thread(target=sprawdzanieZajec)
+            watekZajecia.start()
+        else:
+            try:
+                driver.quit()
+            except:
+                print("Zaden sterownik nie jest wlaczony")
+        print("1. Zatrzymaj włączanie zajęć")
+        #print("2. Włącz włączanie zajęć\n")
+        x = input("Co chcesz zrobic: ")
+        if x == "1":
+            sprawdzajZajecia = False
+        if x == "2":
+            sprawdzajZajecia = True
