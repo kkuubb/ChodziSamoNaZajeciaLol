@@ -15,3 +15,4 @@ Zmienne np. 'przyciskPath' to tak zwane xPath z pliku html. Jeżeli nie wiesz ja
 ### Mozliwe problemy
 1. Tak jak pisalem wyżej program przystosowany do przegladarki brave - zmiana przegladarki to zmiana kawalka kodu
 2. Program został przystosowany do windows najbardziej jak sie da - niestety nie beda dzialac spotkania na zoomie przez brak mozliwosci otwarcia zooma przez terminal.
+3. Przy uyciu przegldarki brave na linuxie nie dziala zamykanie okna po skonczeniu zajec. Problem zdaje sie nie wystepowac przy uzyciu chrome na windowsie.
