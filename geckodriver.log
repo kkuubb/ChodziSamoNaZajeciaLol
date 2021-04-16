@@ -170,3 +170,33 @@ http://requirejs.org/docs/errors.html#nodefine
 JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
 http://requirejs.org/docs/errors.html#nodefine
 1618533852598	Marionette	INFO	Stopped listening on port 40789
+1618537609946	geckodriver	INFO	Listening on 127.0.0.1:35695
+1618537609948	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRHRVtw"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618537611363	Marionette	INFO	Listening on port 41047
+1618537611466	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618537615909	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618537746789	Marionette	INFO	Stopped listening on port 41047
+1618537867146	geckodriver	INFO	Listening on 127.0.0.1:55215
+1618537867148	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile9vsFF8"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618537868611	Marionette	INFO	Listening on port 36991
+1618537868660	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618537873327	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618537892305	Marionette	INFO	Stopped listening on port 36991

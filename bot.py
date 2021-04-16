@@ -22,7 +22,7 @@ if platform.system() == 'Windows':
 elif platform.system() == 'Linux':
     PATH = 'drivers/geckodriver'
 
-
+plikjson = "L2.json"
 wolne = True
 
 
@@ -35,7 +35,7 @@ def odczytajDaneLogowania():
 
 
 def pobierzDaneOPrzedmiotach():
-    jsonf = open('L2.json')
+    jsonf = open(plikjson)
     lista = json.load(jsonf)
     return lista
 
