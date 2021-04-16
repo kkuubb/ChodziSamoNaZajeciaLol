@@ -5,6 +5,7 @@ import time
 import os
 import platform
 from threading import Thread
+import sys
 
 
 # Dla uzytkownikow chroma i brave
@@ -23,7 +24,7 @@ if platform.system() == 'Windows':
 elif platform.system() == 'Linux':
     PATH = 'drivers/geckodriver'
 
-plikjson = "testowy.json"
+plikjson = "L2.json"
 wolne = True
 sprawdzajZajecia = True
 
@@ -51,9 +52,9 @@ def sprawdzGodzine():
     return czas
 
 
-def sprawdzCoJestTerazITamWejdz(czas, przedmioty):
+def sprawdzCoJestTerazITamWejdz(driver, czas, przedmioty):
     global wolne
-    global driver
+    #global driver
     for przedmiot in przedmioty:
         if czas['dzien'] == przedmioty[przedmiot]['dzien']:
             if czas['godzina'] * 60 + czas['minuta'] > przedmioty[przedmiot]['godzinastart'] * 60 + przedmioty[przedmiot]['minutastart'] and czas['godzina'] * 60 + czas['minuta'] < przedmioty[przedmiot]['godzinakoniec'] * 60 + przedmioty[przedmiot]['minutakoniec']:
@@ -66,27 +67,28 @@ def sprawdzCoJestTerazITamWejdz(czas, przedmioty):
                     # driver = webdriver.Chrome(executable_path=PATH, options=(option))
                     # print(driver)
                     driver.maximize_window()
-                    zalogujDoEkursy()
+                    zalogujDoEkursy(driver)
                     print("Zalogowano pomyslnie")
                     # driver.get(przedmioty[przedmiot]['linkprzedmiot'])
                     print("Jestem na stronie przedmiotu")
-                    driver.get(przedmioty[przedmiot]['linkprzedmiot'])
+                    if (przedmioty[przedmiot]["typ"] == "bb" or przedmioty[przedmiot]["typ"] == "zoom" or przedmioty[przedmiot]["typ"] == "0"):
+                        driver.get(przedmioty[przedmiot]['linkprzedmiot'])
                     wolne = False
                     return driver, przedmioty[przedmiot]
                 else:
                     return driver, False
     if not(wolne):
         wolne = True
-        print("Zajecia sie skonczyly, zamykam przegladarke")
+        #print(driver)
         driver.quit()
+        print("Zajecia sie skonczyly, zamykam przegladarke")
         # print(driver)
         return driver, False
     else:
         return False, False
 
 
-def zalogujDoEkursy():
-    global driver
+def zalogujDoEkursy(driver):
     driver.get("https://ekursy.put.poznan.pl/login/index.php")
     loginWithEKonto = driver.find_element_by_xpath(
         '//*[@id="region-main"]/div[2]/div[2]/div[1]/div/div[2]/div/a')
@@ -104,8 +106,7 @@ def zalogujDoEkursy():
         loginWithEKonto.click()
 
 
-def wejdzNaBB(przedmiot):
-    global driver
+def wejdzNaBB(driver, przedmiot):
     driver.get(przedmiot["linkzajecia"])
     joinButton = driver.find_element_by_xpath('//*[@id="join_button_input"]')
     joinButton.click()
@@ -123,8 +124,7 @@ def wejdzNaBB(przedmiot):
     print("Jestem na zajeciach na BBB")
 
 
-def wejdzNaZoom(przedmiot):
-    global driver
+def wejdzNaZoom(driver, przedmiot):
     # driver.get(przedmiot["linkprzedmiot"])
     linkDoPodstrony = driver.find_element_by_xpath(
         przedmiot["linkDoPodstrony"].replace("\'", '\"'))
@@ -134,11 +134,11 @@ def wejdzNaZoom(przedmiot):
         if linkDoOdpaleniaZooma.find('uname') != -1:
             id, password, uname = znajdzDaneZoomUname(linkDoOdpaleniaZooma)
             os.system('xdg-open "zoommtg://zoom.us/join?action=join&confno=' +
-                      id + '&pwd=' + password + '&uname' + uname + '\"')
+                      id + '&pwd=' + password + '&uname' + uname + '\"' + " > /dev/null")
         else:
             id, password = znajdzDaneZoom(linkDoOdpaleniaZooma)
             os.system('xdg-open "zoommtg://zoom.us/join?action=join&confno=' +
-                      id + '&pwd=' + password + '\"')
+                      id + '&pwd=' + password + '\"' + " > /dev/null")
     elif przedmiot["Przycisk"] == 1:
         joinMeeting = driver.find_element_by_xpath(przedmiot["PrzyciskPath"])
         joinMeeting.click()
@@ -147,11 +147,11 @@ def wejdzNaZoom(przedmiot):
         if linkDoOdpaleniaZooma.find('uname') != -1:
             id, password, uname = znajdzDaneZoomUname(linkDoOdpaleniaZooma)
             os.system('xdg-open "zoommtg://zoom.us/join?action=join&confno=' +
-                      id + '&pwd=' + password + '&uname' + uname + '\"')
+                      id + '&pwd=' + password + '&uname' + uname + '\"' + " > /dev/null")
         else:
             id, password = znajdzDaneZoom(linkDoOdpaleniaZooma)
             os.system('xdg-open "zoommtg://zoom.us/join?action=join&confno=' +
-                      id + '&pwd=' + password + '\"')
+                      id + '&pwd=' + password + '\"' + " > /dev/null")
         driver.switch_to_window(driver.window_handles[0])
     if przedmiot['frek'] == 1:
         driver.switch_to.window(driver.window_handles[0])
@@ -175,43 +175,80 @@ def znajdzDaneZoomUname(link):
     return id, password, 'Jakub%20Różycki'
 
 
-def wejdzNaZajecia(przedmiot):
-    global driver
+def wejdzNaZajecia(driver, przedmiot):
+    #global driver
     if przedmiot['typ'] == "bb":
         print("Probuje wejsc na BBB")
-        wejdzNaBB(przedmiot)
-    if przedmiot['typ'] == "zoom":
+        wejdzNaBB(driver, przedmiot)
+    elif przedmiot['typ'] == "zoom":
         print("Probuje wejsc na Zoom")
         if platform.system() == 'Linux':
-            wejdzNaZoom(przedmiot)
+            wejdzNaZoom(driver, przedmiot)
         if platform.system() == 'Windows':
             print("Niestety spotkania na zoomie nie sa obslugiwane na windowsie (nie ma mozliwosci otwarcia zooma przez terminal)")
+    elif przedmiot['typ'] == "0":
+        print("Niestety tych zajec Ci nie otworze :/")
+    else:
+        print("Odbywaja sie teraz zajecia ale nie chciales zebym ich otwieral")
 
 
 def sprawdzanieZajec():
+    driver = ""
     while True:
-        czas = sprawdzGodzine()
-        przedmioty = pobierzDaneOPrzedmiotach()
-        driver, coJest = sprawdzCoJestTerazITamWejdz(czas, przedmioty)
-        if coJest:
-            wejdzNaZajecia(coJest)
-        time.sleep(30)
+        try:
+            czas = sprawdzGodzine()
+            przedmioty = pobierzDaneOPrzedmiotach()
+            #print(driver)
+            driver, coJest = sprawdzCoJestTerazITamWejdz(driver, czas, przedmioty)
+            if coJest:
+                wejdzNaZajecia(driver, coJest)
+            time.sleep(30)
+
+        except:
+            print("Zamnkieto przegladarke\n\n\n")
+
+
+def wejdzNaStronePrzedmiotu():
+    przedmioty = pobierzDaneOPrzedmiotach()
+    k = 1
+    lista = []
+    for i in przedmioty:
+        print(str(k) + ". ", i)
+        lista.append(i)
+        k += 1
+    przedmiot = int(input("Podaj numerek przedmiotu: "))
+    driver = webdriver.Firefox(executable_path=PATH)
+    driver.maximize_window()
+    zalogujDoEkursy(driver)
+    driver.get(przedmioty[lista[przedmiot - 1]]["linkprzedmiot"])
+    while True:
+        try:
+            driver.window_handles[0]
+        except:
+            print("Zamnkieto przegladarke\n\n\n")
+            break
+
+
+def odswiezMenu():
+    while True:
+        time.sleep(120)
+        print("\n\nPROSTE MENU!!!!!!!!!!!!")
+        print("1. Otworz strone przedmiotu")
+        print("Co chcesz zrobic: ")
 
 
 if __name__ == "__main__":
+    watki = []
     while True:
-        if sprawdzajZajecia:
-            watekZajecia = Thread(target=sprawdzanieZajec)
-            watekZajecia.start()
-        else:
-            try:
-                driver.quit()
-            except:
-                print("Zaden sterownik nie jest wlaczony")
-        print("1. Zatrzymaj włączanie zajęć")
-        #print("2. Włącz włączanie zajęć\n")
+        watekMenu = Thread(target=odswiezMenu)
+        watekMenu.start()
+        watekZajecia = Thread(target=sprawdzanieZajec)
+        watekZajecia.start()
+        print("PROSTE MENU!!!!!!!!!!!!")
+        print("1. Otworz strone przedmiotu")
         x = input("Co chcesz zrobic: ")
         if x == "1":
-            sprawdzajZajecia = False
-        if x == "2":
-            sprawdzajZajecia = True
+            watki.append(Thread(target=wejdzNaStronePrzedmiotu()))
+            watki[-1].start()
+            x = 0
+            # wejdzNaStronePrzedmiotu()

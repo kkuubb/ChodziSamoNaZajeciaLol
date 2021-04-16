@@ -286,3 +286,530 @@ http://requirejs.org/docs/errors.html#nodefine
 JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
 http://requirejs.org/docs/errors.html#nodefine
 1618595501895	Marionette	INFO	Stopped listening on port 35019
+1618605572421	geckodriver	INFO	Listening on 127.0.0.1:55243
+1618605573429	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNJz8jL"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618605575044	Marionette	INFO	Listening on port 40215
+1618605575142	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1618605598886	geckodriver	INFO	Listening on 127.0.0.1:42071
+1618605598889	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileyspYwh"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618605600342	Marionette	INFO	Listening on port 35569
+1618605600400	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618605606637	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: Script error for "theme_boost/tooltip"
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618605648716	Marionette	INFO	Stopped listening on port 35569
+1618605651587	geckodriver	INFO	Listening on 127.0.0.1:59275
+1618605651590	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXjJ1QL"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618605653055	Marionette	INFO	Listening on port 42001
+1618605653101	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618605658083	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: Script error for "theme_boost/tooltip"
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618605670996	Marionette	INFO	Stopped listening on port 42001
+1618605739018	geckodriver	INFO	Listening on 127.0.0.1:60213
+1618605739021	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqEgtcx"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618605740459	Marionette	INFO	Listening on port 36443
+1618605740532	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618605746956	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: Script error for "theme_boost/tooltip"
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: Script error for "theme_boost/tooltip"
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://ekursy.put.poznan.pl/lib/requirejs.php/1618376149/core/first.js, line 113: TypeError: M.course.format.get_section_selector is not a function
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618605759621	Marionette	INFO	Stopped listening on port 36443
+1618605781607	geckodriver	INFO	Listening on 127.0.0.1:38507
+1618605781610	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilej2Q507"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618605783084	Marionette	INFO	Listening on port 42267
+1618605783122	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618605790803	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: Script error for "theme_boost/tooltip"
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618605855539	Marionette	INFO	Stopped listening on port 42267
+1618605885923	geckodriver	INFO	Listening on 127.0.0.1:38139
+1618605885926	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezrW7Q0"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618605887397	Marionette	INFO	Listening on port 45417
+1618605887438	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618605893172	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: Script error for "theme_boost/tooltip"
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 179: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+JavaScript error: https://ekursy.put.poznan.pl/lib/requirejs.php/1618376149/core/first.js, line 113: TypeError: M.course.format.get_section_selector is not a function
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: Script error for "theme_boost/tooltip"
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618605924247	Marionette	INFO	Stopped listening on port 45417
+1618606049490	geckodriver	INFO	Listening on 127.0.0.1:50301
+1618606049494	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile3ewvQm"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618606050908	Marionette	INFO	Listening on port 38049
+1618606051005	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618606057354	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/requirejs.php/1618376149/core/first.js, line 113: TypeError: M.course.format.get_section_selector is not a function
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618606088410	Marionette	INFO	Stopped listening on port 38049
+1618606107151	geckodriver	INFO	Listening on 127.0.0.1:35993
+1618606107155	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilemGyG3g"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618606108534	Marionette	INFO	Listening on port 40343
+1618606108574	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618606115734	geckodriver	INFO	Listening on 127.0.0.1:57639
+1618606116337	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1618606116737	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilevI6sXR"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618606118170	Marionette	INFO	Listening on port 34727
+1618606118250	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: Script error for "theme_boost/tooltip"
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618606125818	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618606129204	Marionette	INFO	Stopped listening on port 40343
+1618606133238	Marionette	INFO	Stopped listening on port 34727
+1618606224090	geckodriver	INFO	Listening on 127.0.0.1:53747
+1618606224092	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilegVMYUM"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618606225528	Marionette	INFO	Listening on port 41485
+1618606225604	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618606233283	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: Script error for "theme_boost/tooltip"
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1618606330267	geckodriver	INFO	Listening on 127.0.0.1:34137
+1618606330270	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilevb6bEZ"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618606331717	Marionette	INFO	Listening on port 43929
+1618606331784	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618606336071	Marionette	INFO	Stopped listening on port 43929
+1618606338368	geckodriver	INFO	Listening on 127.0.0.1:37545
+1618606338369	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilecVJDen"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618606339768	Marionette	INFO	Listening on port 33147
+1618606339782	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618606345287	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618606416746	geckodriver	INFO	Listening on 127.0.0.1:51779
+1618606416754	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilek0qVk5"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618606418209	Marionette	INFO	Listening on port 42133
+1618606418266	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618606423843	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1618606461806	geckodriver	INFO	Listening on 127.0.0.1:44611
+1618606461809	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebnb4WB"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618606463389	Marionette	INFO	Listening on port 41633
+1618606463423	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618606504075	geckodriver	INFO	Listening on 127.0.0.1:42299
+1618606504077	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileOWssTv"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618606505524	Marionette	INFO	Listening on port 43165
+1618606505592	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618606506503	Marionette	INFO	Stopped listening on port 41633
+1618606510041	Marionette	INFO	Stopped listening on port 43165
+1618606589520	geckodriver	INFO	Listening on 127.0.0.1:57803
+1618606589523	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejSsxNk"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618606591076	Marionette	INFO	Listening on port 44483
+1618606591136	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618606597922	Marionette	INFO	Stopped listening on port 44483
+1618606630211	geckodriver	INFO	Listening on 127.0.0.1:41309
+1618606630214	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledeb12a"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618606631705	Marionette	INFO	Listening on port 38907
+1618606631726	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618606633388	Marionette	INFO	Stopped listening on port 38907
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1618606794994	geckodriver	INFO	Listening on 127.0.0.1:48335
+1618606794996	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqBsOYN"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618606796454	Marionette	INFO	Listening on port 44539
+1618606796514	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618606801238	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618606841570	Marionette	INFO	Stopped listening on port 44539
+1618606842812	Marionette	INFO	Stopped listening on port 33147
+1618606847670	geckodriver	INFO	Listening on 127.0.0.1:41639
+1618606847673	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiletf3wdM"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618606849229	Marionette	INFO	Listening on port 38021
+1618606849291	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618606853773	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618607096849	geckodriver	INFO	Listening on 127.0.0.1:36437
+1618607096852	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFvSEWi"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618607098257	Marionette	INFO	Listening on port 40751
+1618607098372	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618607103312	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618607125969	Marionette	INFO	Stopped listening on port 40751
+1618607168945	geckodriver	INFO	Listening on 127.0.0.1:38547
+1618607168948	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile4ENeE6"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618607170531	Marionette	INFO	Listening on port 36917
+1618607170565	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618607174797	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618607184194	Marionette	INFO	Stopped listening on port 36917
+1618607356435	geckodriver	INFO	Listening on 127.0.0.1:43383
+1618607356438	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelONUXA"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618607357916	Marionette	INFO	Listening on port 42433
+1618607357950	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618607362504	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: Script error for "theme_boost/tooltip"
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618607373139	Marionette	INFO	Stopped listening on port 42433
+1618607426128	geckodriver	INFO	Listening on 127.0.0.1:34471
+1618607426132	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXSczKA"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618607427570	Marionette	INFO	Listening on port 43249
+1618607427643	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618607432149	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618607444945	Marionette	INFO	Stopped listening on port 43249
+1618607474358	geckodriver	INFO	Listening on 127.0.0.1:35903
+1618607474360	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRo0CvI"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618607475835	Marionette	INFO	Listening on port 36719
+1618607475872	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618607481180	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618607528617	Marionette	INFO	Stopped listening on port 36719
+1618607934558	geckodriver	INFO	Listening on 127.0.0.1:39295
+1618607934561	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileH3EXXP"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618607935973	Marionette	INFO	Listening on port 42275
+1618607936075	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618607941168	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618607978407	Marionette	INFO	Stopped listening on port 42275
+1618607997738	geckodriver	INFO	Listening on 127.0.0.1:48499
+1618607997741	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileK0RYLV"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618607999161	Marionette	INFO	Listening on port 34713
+1618607999252	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618608004043	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618608014706	Marionette	INFO	Stopped listening on port 34713
+1618608050438	geckodriver	INFO	Listening on 127.0.0.1:56817
+1618608050441	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileIcIC0u"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618608051948	Marionette	INFO	Listening on port 40485
+1618608052061	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618608057410	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618608065789	Marionette	INFO	Stopped listening on port 40485
+1618608121274	geckodriver	INFO	Listening on 127.0.0.1:38947
+1618608121276	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqgakTm"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618608122838	Marionette	INFO	Listening on port 42387
+1618608122888	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618608128397	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618608168715	Marionette	INFO	Stopped listening on port 42387
+1618608277731	geckodriver	INFO	Listening on 127.0.0.1:33379
+1618608277734	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileAAWSka"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618608279190	Marionette	INFO	Listening on port 40293
+1618608279245	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618608286706	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1618608423842	geckodriver	INFO	Listening on 127.0.0.1:43795
+1618608423845	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileCa0Uv9"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618608425336	Marionette	INFO	Listening on port 44177
+1618608425357	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618608430474	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1618608561937	geckodriver	INFO	Listening on 127.0.0.1:53843
+1618608561939	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilei9AbhC"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618608563423	Marionette	INFO	Listening on port 41289
+1618608563451	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618608569963	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618608596365	Marionette	INFO	Stopped listening on port 41289
+1618608617692	geckodriver	INFO	Listening on 127.0.0.1:35623
+1618608617694	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileHGyfng"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618608619240	Marionette	INFO	Listening on port 41743
+1618608619307	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618608626333	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618608642227	Marionette	INFO	Stopped listening on port 41743
+1618608707363	geckodriver	INFO	Listening on 127.0.0.1:40433
+1618608707366	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileowOIqv"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618608708817	Marionette	INFO	Listening on port 43343
+1618608708877	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618608712250	Marionette	INFO	Stopped listening on port 43343
+1618608823159	geckodriver	INFO	Listening on 127.0.0.1:49319
+1618608823162	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezRv6RF"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618608824630	Marionette	INFO	Listening on port 40783
+1618608824673	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: Script error for "core/first"
+http://requirejs.org/docs/errors.html#scripterror
+1618608826446	Marionette	INFO	Stopped listening on port 40783
+1618608948437	geckodriver	INFO	Listening on 127.0.0.1:57329
+1618608948439	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile0JCxgJ"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618608949947	Marionette	INFO	Listening on port 37015
+1618608950058	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618608952060	geckodriver	INFO	Listening on 127.0.0.1:42917
+1618608952061	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFMefUY"
+1618608952196	Marionette	INFO	Stopped listening on port 37015
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618608953607	Marionette	INFO	Listening on port 40869
+1618608953673	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618608964648	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618608974793	Marionette	INFO	Stopped listening on port 40869
+1618608991997	geckodriver	INFO	Listening on 127.0.0.1:35203
+1618608992000	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVWIV3o"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618608993420	Marionette	INFO	Listening on port 43319
+1618608993517	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618609000943	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618609021274	Marionette	INFO	Stopped listening on port 43319
+1618609082452	geckodriver	INFO	Listening on 127.0.0.1:37807
+1618609082455	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilesvXHxN"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618609083894	Marionette	INFO	Listening on port 33317
+1618609083967	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618609089993	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618609214802	geckodriver	INFO	Listening on 127.0.0.1:52589
+1618609214806	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDBEJPx"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618609216326	Marionette	INFO	Listening on port 39803
+1618609216418	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618609219690	geckodriver	INFO	Listening on 127.0.0.1:47861
+1618609219692	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileM28Go1"
+1618609219824	Marionette	INFO	Stopped listening on port 39803
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618609221285	Marionette	INFO	Listening on port 40263
+1618609221304	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: Script error for "core/first"
+http://requirejs.org/docs/errors.html#scripterror
+1618609222780	geckodriver	INFO	Listening on 127.0.0.1:38907
+1618609222782	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilekWz3YR"
+1618609222923	Marionette	INFO	Stopped listening on port 40263
+1618609223285	geckodriver	INFO	Listening on 127.0.0.1:54071
+1618609223285	geckodriver	INFO	Listening on 127.0.0.1:53907
+1618609223287	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVbJtf0"
+1618609223287	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePTrzzH"
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1618609223456	geckodriver	INFO	Listening on 127.0.0.1:53707
+1618609223457	geckodriver	INFO	Listening on 127.0.0.1:42565
+1618609223458	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNMxiD2"
+Exiting due to channel error.
+1618609233319	geckodriver	INFO	Listening on 127.0.0.1:53925
+1618609233323	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileIXoQ6B"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618609234907	Marionette	INFO	Listening on port 41781
+1618609234971	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618609241086	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618609251389	Marionette	INFO	Stopped listening on port 41781
+1618609307027	geckodriver	INFO	Listening on 127.0.0.1:33975
+1618609307029	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZhGrWA"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618609308483	Marionette	INFO	Listening on port 40411
+1618609308541	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618609314305	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618609504239	Marionette	INFO	Stopped listening on port 40411
+1618609538850	geckodriver	INFO	Listening on 127.0.0.1:39255
+1618609538854	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileif4Jln"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618609540329	Marionette	INFO	Listening on port 36159
+1618609540368	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618609545162	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: Script error for "theme_boost/tooltip"
+http://requirejs.org/docs/errors.html#scripterror
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618609698332	geckodriver	INFO	Listening on 127.0.0.1:48435
+1618609698335	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXIpn6W"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618609699894	Marionette	INFO	Listening on port 32811
+1618609699977	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618609705990	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618609714426	Marionette	INFO	Stopped listening on port 32811
+1618609716423	Marionette	INFO	Stopped listening on port 36159
+1618609832770	geckodriver	INFO	Listening on 127.0.0.1:47217
+1618609832773	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejJFkP2"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618609834242	Marionette	INFO	Listening on port 43799
+1618609834287	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618609838813	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1618609938855	geckodriver	INFO	Listening on 127.0.0.1:45067
+1618609938858	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezIVRup"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618609940303	Marionette	INFO	Listening on port 42215
+1618609940369	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618609946300	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1618610053137	geckodriver	INFO	Listening on 127.0.0.1:43281
+1618610053141	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileOw2m69"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618610054612	Marionette	INFO	Listening on port 44457
+1618610054656	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618610059312	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1618610256798	geckodriver	INFO	Listening on 127.0.0.1:55831
+1618610256801	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiler1vTo0"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618610258273	Marionette	INFO	Listening on port 40951
+1618610258314	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618610263894	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1618610482034	geckodriver	INFO	Listening on 127.0.0.1:48483
+1618610482037	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileBlIp2O"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618610483571	Marionette	INFO	Listening on port 34205
+1618610483649	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618610488795	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618610523527	Marionette	INFO	Stopped listening on port 34205
+1618610704062	geckodriver	INFO	Listening on 127.0.0.1:37833
+1618610704064	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileL29xV3"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1618610705534	Marionette	INFO	Listening on port 46875
+1618610705578	Marionette	WARN	TLS certificate errors will be ignored for this session
+1618610711498	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+JavaScript error: https://ekursy.put.poznan.pl/lib/javascript.php/1618376149/lib/requirejs/require.min.js, line 5: Error: No define call for theme_boost/tooltip
+http://requirejs.org/docs/errors.html#nodefine
+1618610735618	Marionette	INFO	Stopped listening on port 46875
