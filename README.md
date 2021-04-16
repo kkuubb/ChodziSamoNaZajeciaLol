@@ -1,4 +1,4 @@
-# Program do zdalnego(bo z łóżka) uczestniczenia w zajęciach
+# Program do zdalnego (bo z łóżka) uczestniczenia w zajęciach
 ## Zbudowany dla grupy L2 ale łatwo modyfikowalny
 ### Uruchomienie
 1. Instalacja Selenium - 'pip3 install Selenium'
