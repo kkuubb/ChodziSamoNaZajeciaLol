@@ -214,7 +214,7 @@ def znajdzDaneZoomUname(link):
     id = link[link.find(
         '/j/') + 3:link.find('?pwd')]
     password = link[link.find('pwd=') + 4:link.find('&uname')]
-    return id, password, 'Adam%20Tomczyk'
+    return id, password, 'Jakub%20Różycki'
 
 
 def wejdzNaZajecia(przedmiot):
