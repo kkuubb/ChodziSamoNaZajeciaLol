@@ -138,6 +138,43 @@ def wejdzNaZoom(przedmiot):
         linkDoOdpaleniaZooma = przedmiot["LinkDoZooma"]
         if linkDoOdpaleniaZooma.find('uname') != -1:
             id, password, uname = znajdzDaneZoomUname(linkDoOdpaleniaZooma)
+            os.system('xdg-open "zoommtg://zoom.us/join?action=join&confno=' +
+                      id + '&pwd=' + password + '&uname' + uname + '\"')
+        else:
+            id, password = znajdzDaneZoom(linkDoOdpaleniaZooma)
+            os.system('xdg-open "zoommtg://zoom.us/join?action=join&confno=' +
+                      id + '&pwd=' + password + '\"')
+    elif przedmiot["Przycisk"] == 1:
+        joinMeeting = driver.find_element_by_xpath(przedmiot["PrzyciskPath"])
+        joinMeeting.click()
+        driver.switch_to_window(driver.window_handles[1])
+        linkDoOdpaleniaZooma = driver.current_url
+        if linkDoOdpaleniaZooma.find('uname') != -1:
+            id, password, uname = znajdzDaneZoomUname(linkDoOdpaleniaZooma)
+            os.system('xdg-open "zoommtg://zoom.us/join?action=join&confno=' +
+                      id + '&pwd=' + password + '&uname' + uname + '\"')
+        else:
+            id, password = znajdzDaneZoom(linkDoOdpaleniaZooma)
+            os.system('xdg-open "zoommtg://zoom.us/join?action=join&confno=' +
+                      id + '&pwd=' + password + '\"')
+        driver.switch_to_window(driver.window_handles[0])
+    if przedmiot['frek'] == 1:
+        driver.switch_to.window(driver.window_handles[0])
+        driver.get(
+            'https://ekursy.put.poznan.pl/mod/attendance/view.php?id=242233')
+    print("Jestem na zajeciach na Zoom")
+    # driver.get(linkDoZooma.get_attribute('href'))
+
+def wejdzNaZoomMac(przedmiot):
+    global driver
+    # driver.get(przedmiot["linkprzedmiot"])
+    linkDoPodstrony = driver.find_element_by_xpath(
+        przedmiot["linkDoPodstrony"].replace("\'", '\"'))
+    driver.get(linkDoPodstrony.get_attribute('href'))
+    if przedmiot["Przycisk"] == 0:
+        linkDoOdpaleniaZooma = przedmiot["LinkDoZooma"]
+        if linkDoOdpaleniaZooma.find('uname') != -1:
+            id, password, uname = znajdzDaneZoomUname(linkDoOdpaleniaZooma)
             os.system('open "zoommtg://zoom.us/join?action=join&confno=' +
                       id + '&pwd=' + password + '&uname' + uname + '\"')
         else:
@@ -192,7 +229,7 @@ def wejdzNaZajecia(przedmiot):
         if platform.system() == 'Windows':
             print("Niestety spotkania na zoomie nie sa obslugiwane na windowsie (nie ma mozliwosci otwarcia zooma przez terminal)")
         else:
-            wejdzNaZoom(przedmiot)
+            wejdzNaZoomMac(przedmiot)
 
 
 while True:
