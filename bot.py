@@ -7,20 +7,27 @@ import platform
 
 
 # Dla uzytkownikow chroma i brave
-# if platform.system() == 'Windows':
-#     PATH = 'drivers/chromedriver.exe'
-# elif platform.system() == 'Linux':
-#     PATH = 'drivers/chromedriver'
+if platform.system() == 'Windows':
+    PATH = 'drivers/chromedriver.exe'
+elif platform.system() == 'Linux':
+    PATH = 'drivers/chromedriver'
+else:
+    PATH = 'drivers/chromedrivermac'
 # PATHbrave = "/usr/bin/brave-browser"
 # option = webdriver.ChromeOptions()
 # option.binary_location = PATHbrave
 
 
 # Dla uzytkownikow Firefox
-if platform.system() == 'Windows':
-    PATH = 'drivers/geckodriver.exe'
-elif platform.system() == 'Linux':
-    PATH = 'drivers/geckodriver'
+# if platform.system() == 'Windows':
+#     PATH = 'drivers/geckodriver.exe'
+#     print("Windows")
+# elif platform.system() == 'Linux':
+#     PATH = 'drivers/geckodriver'
+#     print("linux")
+# else:
+#     PATH = 'drivers/geckodrivermac'
+#     print("mac")
 
 plikjson = "L2.json"
 wolne = True
@@ -57,9 +64,9 @@ def sprawdzCoJestTerazITamWejdz(czas, przedmioty):
             if czas['godzina'] * 60 + czas['minuta'] > przedmioty[przedmiot]['godzinastart'] * 60 + przedmioty[przedmiot]['minutastart'] and czas['godzina'] * 60 + czas['minuta'] < przedmioty[przedmiot]['godzinakoniec'] * 60 + przedmioty[przedmiot]['minutakoniec']:
                 if wolne:
                     # Jezeli uzywasz Firefox to zamien driver na:
-                    driver = webdriver.Firefox(executable_path=PATH)
+                    # driver = webdriver.Firefox(executable_path=PATH)
                     # Jezeli uzywasz chrome to zamien driver na:
-                    # driver = webdriver.Chrome(PATH)
+                    driver = webdriver.Chrome(PATH)
                     # Jezeli uzywasz Brave
                     # driver = webdriver.Chrome(executable_path=PATH, options=(option))
                     # print(driver)
@@ -131,11 +138,11 @@ def wejdzNaZoom(przedmiot):
         linkDoOdpaleniaZooma = przedmiot["LinkDoZooma"]
         if linkDoOdpaleniaZooma.find('uname') != -1:
             id, password, uname = znajdzDaneZoomUname(linkDoOdpaleniaZooma)
-            os.system('xdg-open "zoommtg://zoom.us/join?action=join&confno=' +
+            os.system('open "zoommtg://zoom.us/join?action=join&confno=' +
                       id + '&pwd=' + password + '&uname' + uname + '\"')
         else:
             id, password = znajdzDaneZoom(linkDoOdpaleniaZooma)
-            os.system('xdg-open "zoommtg://zoom.us/join?action=join&confno=' +
+            os.system('open "zoommtg://zoom.us/join?action=join&confno=' +
                       id + '&pwd=' + password + '\"')
     elif przedmiot["Przycisk"] == 1:
         joinMeeting = driver.find_element_by_xpath(przedmiot["PrzyciskPath"])
@@ -144,11 +151,11 @@ def wejdzNaZoom(przedmiot):
         linkDoOdpaleniaZooma = driver.current_url
         if linkDoOdpaleniaZooma.find('uname') != -1:
             id, password, uname = znajdzDaneZoomUname(linkDoOdpaleniaZooma)
-            os.system('xdg-open "zoommtg://zoom.us/join?action=join&confno=' +
+            os.system('open "zoommtg://zoom.us/join?action=join&confno=' +
                       id + '&pwd=' + password + '&uname' + uname + '\"')
         else:
             id, password = znajdzDaneZoom(linkDoOdpaleniaZooma)
-            os.system('xdg-open "zoommtg://zoom.us/join?action=join&confno=' +
+            os.system('open "zoommtg://zoom.us/join?action=join&confno=' +
                       id + '&pwd=' + password + '\"')
         driver.switch_to_window(driver.window_handles[0])
     if przedmiot['frek'] == 1:
@@ -170,7 +177,7 @@ def znajdzDaneZoomUname(link):
     id = link[link.find(
         '/j/') + 3:link.find('?pwd')]
     password = link[link.find('pwd=') + 4:link.find('&uname')]
-    return id, password, 'Jakub%20Różycki'
+    return id, password, 'Adam%20Tomczyk'
 
 
 def wejdzNaZajecia(przedmiot):
@@ -184,6 +191,8 @@ def wejdzNaZajecia(przedmiot):
             wejdzNaZoom(przedmiot)
         if platform.system() == 'Windows':
             print("Niestety spotkania na zoomie nie sa obslugiwane na windowsie (nie ma mozliwosci otwarcia zooma przez terminal)")
+        else:
+            wejdzNaZoom(przedmiot)
 
 
 while True:
