@@ -58,7 +58,7 @@ def sprawdzCoJestTerazITamWejdz(driver, czas, przedmioty):
     #global driver
     for przedmiot in przedmioty:
         if czas['dzien'] == przedmioty[przedmiot]['dzien']:
-            if czas['godzina'] * 60 + czas['minuta'] > przedmioty[przedmiot]['godzinastart'] * 60 + przedmioty[przedmiot]['minutastart'] and czas['godzina'] * 60 + czas['minuta'] < przedmioty[przedmiot]['godzinakoniec'] * 60 + przedmioty[przedmiot]['minutakoniec']:
+            if czas['godzina'] * 60 + czas['minuta'] >= przedmioty[przedmiot]['godzinastart'] * 60 + przedmioty[przedmiot]['minutastart'] and czas['godzina'] * 60 + czas['minuta'] < przedmioty[przedmiot]['godzinakoniec'] * 60 + przedmioty[przedmiot]['minutakoniec']:
                 if wolne:
                     # Jezeli uzywasz Firefox to zamien driver na:
                     driver = webdriver.Firefox(executable_path=PATH)
