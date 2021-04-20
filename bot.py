@@ -75,7 +75,9 @@ def sprawdzCoJestTerazITamWejdz(czas, przedmioty):
                     print("Zalogowano pomyslnie")
                     # driver.get(przedmioty[przedmiot]['linkprzedmiot'])
                     print("Jestem na stronie przedmiotu")
-                    driver.get(przedmioty[przedmiot]['linkprzedmiot'])
+                    if (przedmioty[przedmiot]["typ"] == "bb" or przedmioty[przedmiot]["typ"] == "zoom" or przedmioty[przedmiot]["typ"] == "0"):
+                        driver.get(przedmioty[przedmiot]['linkprzedmiot'])
+                    #driver.get(przedmioty[przedmiot]['linkprzedmiot'])
                     wolne = False
                     return driver, przedmioty[przedmiot]
                 else:
@@ -230,6 +232,10 @@ def wejdzNaZajecia(przedmiot):
             print("Niestety spotkania na zoomie nie sa obslugiwane na windowsie (nie ma mozliwosci otwarcia zooma przez terminal)")
         else:
             wejdzNaZoomMac(przedmiot)
+    elif przedmiot['typ'] == "0":
+        print("Niestety tych zajec Ci nie otworze :/")
+    else:
+        print("Odbywaja sie teraz zajecia ale nie chciales zebym ich otwieral")
 
 
 while True:
