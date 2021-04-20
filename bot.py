@@ -23,6 +23,8 @@ if platform.system() == 'Windows':
     PATH = 'drivers/geckodriver.exe'
 elif platform.system() == 'Linux':
     PATH = 'drivers/geckodriver'
+else:
+    PATH = 'drivers/geckodrivermac'
 
 plikjson = "L2.json"
 wolne = True
