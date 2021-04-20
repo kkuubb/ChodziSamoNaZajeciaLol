@@ -8,14 +8,21 @@ wolne = True
 
 # ######################## panel Kotrolny #####################################
 # Uzupełnij dane logowania - pasy.txt
+
 # Z jakiego pliku chcesz korzystac:
 plikjson = "L2.json"
+
 # Podaj imie i nazwisko (chuj wie czemu taki format, zoom tak robi)
 imieINazwisko = 'Jakub%20Różycki'
+
 # Z jakiej przegladarki chcesz korzystac(1. firefox, 2. Chrome, 3. Brave)
 przegladarka = 1
+
 # Jezeli uzywasz brave zmien lokalizacje programu (jezeli potrzeba)
 PATHbrave = "/usr/bin/brave-browser"
+
+# Jezli nie chcesz zeby jakies zajecia sie odpalaly, zmien ich typ w pliku json
+# na jakikolwiek inny niz bb, zoom albo 0
 
 # ######################## panel Kotrolny #####################################
 
