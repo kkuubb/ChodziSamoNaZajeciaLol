@@ -4,33 +4,52 @@ import json
 import time
 import os
 import platform
-
-
-# Dla uzytkownikow chroma i brave
-# if platform.system() == 'Windows':
-#     PATH = 'drivers/chromedriver.exe'
-# elif platform.system() == 'Linux':
-#     PATH = 'drivers/chromedriver'
-# else:
-#     PATH = 'drivers/chromedrivermac'
-# PATHbrave = "/usr/bin/brave-browser"
-# option = webdriver.ChromeOptions()
-# option.binary_location = PATHbrave
-
-
-# Dla uzytkownikow Firefox
-if platform.system() == 'Windows':
-    PATH = 'drivers/geckodriver.exe'
-    print("Windows")
-elif platform.system() == 'Linux':
-    PATH = 'drivers/geckodriver'
-    print("linux")
-else:
-    PATH = 'drivers/geckodrivermac'
-    print("mac")
-
-plikjson = "L2.json"
 wolne = True
+
+# ######################## panel Kotrolny #####################################
+# Uzupełnij dane logowania - pasy.txt
+# Z jakiego pliku chcesz korzystac:
+plikjson = "L2.json"
+# Podaj imie i nazwisko (chuj wie czemu taki format, zoom tak robi)
+imieINazwisko = 'Jakub%20Różycki'
+# Z jakiej przegladarki chcesz korzystac(1. firefox, 2. Chrome, 3. Brave)
+przegladarka = 1
+# Jezeli uzywasz brave zmien lokalizacje programu (jezeli potrzeba)
+PATHbrave = "/usr/bin/brave-browser"
+
+# ######################## panel Kotrolny #####################################
+
+if przegladarka == 3:
+    # Dla uzytkownikow brave
+    if platform.system() == 'Windows':
+        PATH = 'drivers/chromedriver.exe'
+    elif platform.system() == 'Linux':
+        PATH = 'drivers/chromedriver'
+    else:
+        PATH = 'drivers/chromedrivermac'
+    option = webdriver.ChromeOptions()
+    option.binary_location = PATHbrave
+
+if przegladarka == 1:
+    # Dla uzytkownikow Firefox
+    if platform.system() == 'Windows':
+        PATH = 'drivers/geckodriver.exe'
+        print("Windows")
+    elif platform.system() == 'Linux':
+        PATH = 'drivers/geckodriver'
+        print("linux")
+    else:
+        PATH = 'drivers/geckodrivermac'
+        print("mac")
+
+if przegladarka == 2:
+    # Dla uzytkownikow chroma
+    if platform.system() == 'Windows':
+        PATH = 'drivers/chromedriver.exe'
+    elif platform.system() == 'Linux':
+        PATH = 'drivers/chromedriver'
+    else:
+        PATH = 'drivers/chromedrivermac'
 
 
 def odczytajDaneLogowania():
@@ -64,20 +83,24 @@ def sprawdzCoJestTerazITamWejdz(czas, przedmioty):
             if czas['godzina'] * 60 + czas['minuta'] > przedmioty[przedmiot]['godzinastart'] * 60 + przedmioty[przedmiot]['minutastart'] and czas['godzina'] * 60 + czas['minuta'] < przedmioty[przedmiot]['godzinakoniec'] * 60 + przedmioty[przedmiot]['minutakoniec']:
                 if wolne:
                     # Jezeli uzywasz Firefox to zamien driver na:
-                    driver = webdriver.Firefox(executable_path=PATH)
+                    if przegladarka == 1:
+                        driver = webdriver.Firefox(executable_path=PATH)
                     # Jezeli uzywasz chrome to zamien driver na:
-                    # driver = webdriver.Chrome(PATH)
+                    if przegladarka == 2:
+                        driver = webdriver.Chrome(PATH)
                     # Jezeli uzywasz Brave
-                    # driver = webdriver.Chrome(executable_path=PATH, options=(option))
+                    if przegladarka == 3:
+                        driver = webdriver.Chrome(
+                            executable_path=PATH, options=(option))
                     # print(driver)
                     driver.maximize_window()
                     zalogujDoEkursy()
                     print("Zalogowano pomyslnie")
-                    # driver.get(przedmioty[przedmiot]['linkprzedmiot'])
                     print("Jestem na stronie przedmiotu")
-                    if (przedmioty[przedmiot]["typ"] == "bb" or przedmioty[przedmiot]["typ"] == "zoom" or przedmioty[przedmiot]["typ"] == "0"):
+                    if (przedmioty[przedmiot]["typ"] == "bb" or
+                        przedmioty[przedmiot]["typ"] == "zoom" or
+                            przedmioty[przedmiot]["typ"] == "0"):
                         driver.get(przedmioty[przedmiot]['linkprzedmiot'])
-                    #driver.get(przedmioty[przedmiot]['linkprzedmiot'])
                     wolne = False
                     return driver, przedmioty[przedmiot]
                 else:
@@ -167,14 +190,12 @@ def wejdzNaZoom(przedmiot):
     print("Jestem na zajeciach na Zoom")
     # driver.get(linkDoZooma.get_attribute('href'))
 
+
 def wejdzNaZoomMac(przedmiot):
     global driver
     # driver.get(przedmiot["linkprzedmiot"])
-    try:
-        linkDoPodstrony = driver.find_element_by_xpath(
-            przedmiot["linkDoPodstrony"].replace("\'", '\"'))
-    except:
-        print("No cos nie dziala")
+    linkDoPodstrony = driver.find_element_by_xpath(
+        przedmiot["linkDoPodstrony"].replace("\'", '\"'))
     driver.get(linkDoPodstrony.get_attribute('href'))
     if przedmiot["Przycisk"] == 0:
         linkDoOdpaleniaZooma = przedmiot["LinkDoZooma"]
@@ -219,7 +240,7 @@ def znajdzDaneZoomUname(link):
     id = link[link.find(
         '/j/') + 3:link.find('?pwd')]
     password = link[link.find('pwd=') + 4:link.find('&uname')]
-    return id, password, 'Jakub%20Różycki'
+    return id, password, imieINazwisko
 
 
 def wejdzNaZajecia(przedmiot):
