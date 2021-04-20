@@ -2,11 +2,11 @@
 ## Zbudowany dla grupy L2 ale łatwo modyfikowalny
 ### Uruchomienie
 1. Instalacja Selenium - 'pip3 install Selenium'
-2. Pobranie stereownika do używanej przeglądarki - sterowniki kompatybilne z wersją w czasie tworzenia znajduja sie w folderze drivers, jezeli chcesz zmienic przegladarke odkomentuj wybrane wiersze (9-23)
-3. Ustawienie defaultowej przeglądarki - w linijce 49 kodu definiowany jest obiekt driver ale dla przeglądarki - w komentarzu znajduje sie podpowiedz jak zamienic to na przegladarke np brave, chrome - defaultowo ustawiony jest firefox (najmniej problematyczny)
-4. W pliku 'pasy.txt' znajduja sie dane logowania do eKonta, musisz uzupelnic zeby dzialalo
+2. Pobranie stereownika do używanej przeglądarki - sterowniki kompatybilne z wersjami przegladarek w czasie tworzenia znajduja sie w folderze drivers
+3. W pliku 'pasy.txt' znajduja sie dane logowania do eKonta, musisz uzupelnic zeby dzialalo
 5. W pliku 'L2.json' jest rozpiska zajęć - co, jak kiedy. Jeżeli chcesz dodać jakieś zajęcia dopisujesz je tam
-6. Program odpalamy 'python3 bot.py' programem, który ma uprawnienia admina, np terminal
+6. Konfiguracji programu dokonujemy w panelu konfiguracyjnym w linijkach od 9 do 20
+7. Program odpalamy 'python3 bot.py' programem, który ma uprawnienia admina, np terminal
 
 ### Dodawnia zajęć
 Niestety nie działa dla każdego przedmiotu, trzeba porównać czy działa podobnie do któregoś z już istniejących.
