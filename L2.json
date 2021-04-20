@@ -105,5 +105,41 @@
       "typ": "bb",
       "frek": 1,
       "linkzajecia": "https://ekursy.put.poznan.pl/mod/bigbluebuttonbn/view.php?id=887689"
+    },
+    "AML": {
+      "linkprzedmiot": "https://ekursy.put.poznan.pl/course/view.php?id=3622",
+      "dzien": 1,
+      "godzinastart": 11,
+      "minutastart": 45,
+      "godzinakoniec": 13,
+      "minutakoniec": 15,
+      "typ": "0"
+    },
+    "AMW": {
+      "linkprzedmiot": "https://ekursy.put.poznan.pl/course/view.php?id=3622",
+      "dzien": 1,
+      "godzinastart": 15,
+      "minutastart": 10,
+      "godzinakoniec": 16,
+      "minutakoniec": 40,
+      "typ": "0"
+    },
+    "ZIW": {
+      "linkprzedmiot": "https://ekursy.put.poznan.pl/course/view.php?id=3624",
+      "dzien": 2,
+      "godzinastart": 9,
+      "minutastart": 45,
+      "godzinakoniec": 11,
+      "minutakoniec": 15,
+      "typ": "0"
+    },
+    "ZIL": {
+      "linkprzedmiot": "https://ekursy.put.poznan.pl/course/view.php?id=3624",
+      "dzien": 5,
+      "godzinastart": 11,
+      "minutastart": 45,
+      "godzinakoniec": 13,
+      "minutakoniec": 15,
+      "typ": "0"
     }
 }
